@@ -2,19 +2,33 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-particles-js"
 import Navbar from "./component/Navbar";
 import "./App.css";
-import Header from "./component/Header";
+import Header from "./pages/Header";
+import About from "./pages/About"
+import Cards from "./pages/Cards";
+import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
+import Footer from "./component/Footer";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <>
+    <Router>
+    <Navbar />
+    <Switch>
+      <Route exact path="/">
       <Particles
         params={{
           particles: {
             number: {
-              value: 30,
+              value: 50,
               density: {
                 enable: true,
-                value_area: 600,
+                value_area:600,
               },
             },
             shape:{
@@ -27,9 +41,27 @@ function App() {
           },
         }}
       />
-      <Navbar />
+      
       <Header />
-    </>
+      </Route>
+<Route exact path="/about">
+      <About />
+      </Route>
+      <Route exact path="/projects">
+      <Cards />
+      </Route>
+      <Route exact path="/skills">
+      <Skills/>
+      </Route>
+      
+        
+      <Route exact path="/contact">  
+      
+      <Contact/>
+      </Route>
+      </Switch>
+      <Footer />
+      </Router>
   );
 }
 
