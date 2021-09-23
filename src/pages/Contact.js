@@ -13,6 +13,7 @@ const Contact = () => {
           console.log(error.text);
       });
       e.target.reset();
+      alert("Message Sent");
   }
   return (
     <div className="container">

@@ -1,8 +1,8 @@
 import React from "react";
-import { FaSchool,FaUniversity } from 'react-icons/fa';
-import { FcAssistant } from 'react-icons/fc';
-import {GiTeacher} from 'react-icons/gi'
-import {FiStar} from 'react-icons/fi'
+import { FaSchool, FaUniversity } from "react-icons/fa";
+import { FcAssistant } from "react-icons/fc";
+import { GiTeacher } from "react-icons/gi";
+import { FiStar } from "react-icons/fi";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,7 +12,7 @@ import about from "../about.png";
 
 const About = () => {
   return (
-    <div className="container" style={{marginBottom:"50px"}}>
+    <div className="container" style={{ marginBottom: "50px" }}>
       <div className="row">
         <div className="col-sm">
           <h1
@@ -22,12 +22,18 @@ const About = () => {
               padding: "25px",
               marginTop: "25px",
               marginBottom: "50px",
-              fontSize:"70px"
+              fontSize: "70px",
             }}
           >
             About
           </h1>
-          <hr style={{ backgroundColor: "white", width: "50%",marginBottom:"40px" }}></hr>
+          <hr
+            style={{
+              backgroundColor: "white",
+              width: "50%",
+              marginBottom: "40px",
+            }}
+          ></hr>
         </div>
       </div>
       <div
@@ -50,39 +56,44 @@ const About = () => {
           </h5>
         </div>
       </div>
-      <div style={{color:"white",textAlign:"center",padding:"25px",marginBottom:"50px"}}><h1>Eductaion and Experience</h1></div>
+      <div
+        style={{
+          color: "white",
+          textAlign: "center",
+          padding: "25px",
+          marginBottom: "50px",
+        }}
+      >
+        <h1>Eductaion and Experience</h1>
+      </div>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "orange", color: "black" }}
           contentArrowStyle={{ borderRight: "7px solid orange" }}
           date="March 2021- Oct 2021"
-          iconStyle={{ background: "black",color:"orange" }}
-          icon={<FaSchool/>}
+          iconStyle={{ background: "black", color: "orange" }}
+          icon={<FaSchool />}
         >
           <h3 className="vertical-timeline-element-title">Student</h3>
           <h4 className="vertical-timeline-element-subtitle">Intec Brussel</h4>
-          <p>
-            Front End Developer Course
-          </p>
+          <p>Front End Developer Course</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2021-2021"
+          date="2009-2013"
           iconStyle={{ background: "black", color: "orange" }}
           icon={<FaUniversity />}
         >
           <h3 className="vertical-timeline-element-title">Student</h3>
           <h4 className="vertical-timeline-element-subtitle">
-          University of Sargodha,Pakistan
+            University of Sargodha,Pakistan
           </h4>
-          <p>
-           Bachelors in Computer Science
-          </p>
+          <p>Bachelors in Computer Science</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
+          date="2007 - 2009"
           iconStyle={{ background: "black", color: "orange" }}
           icon={<FaSchool />}
         >
@@ -94,30 +105,30 @@ const About = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
+          date="2018 - 2020"
           iconStyle={{ background: "black" }}
-          icon={< FcAssistant/>}
+          icon={<FcAssistant />}
         >
-          <h3 className="vertical-timeline-element-title">Administratief Assistant</h3>
+          <h3 className="vertical-timeline-element-title">
+            Administratief Assistant
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
-           Hasselt, Belgium
+            Hasselt, Belgium
           </h4>
           <p>Deals with Invoices and Queries</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
+          date="2013-2015"
           iconStyle={{ background: "black", color: "#fff" }}
           icon={<GiTeacher />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Maths Teacher
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Maryam Higher Secondary School,Pkaistan</h4>
-          
+          <h3 className="vertical-timeline-element-title">Maths Teacher</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Maryam Higher Secondary School,Pkaistan
+          </h4>
         </VerticalTimelineElement>
-        
-        
+
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
           icon={<FiStar />}

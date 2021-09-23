@@ -13,6 +13,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Errorpage from "./pages/Errorpage";
 
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
       
       <Contact/>
       </Route>
+      <Route>
+        <Errorpage/>
+      </Route>
+      <Route exact path="/ErrorPage"></Route>
       </Switch>
       <Footer />
       </Router>
