@@ -33,7 +33,7 @@ const Footer = () => {
             <a href="https://github.com/Mariam-Saddiqa">
               <AiOutlineGithub style={{ width: "50px",height:"50px",color:"lightblue" ,marginLeft:"10px"}} />
             </a>
-            <a href="www.linkedin.com/in/mariam-saddiqa">
+            <a href="https://www.linkedin.com/in/mariam-saddiqa">
               <AiFillLinkedin style={{ width: "50px",height:"50px",marginLeft:"10px" }}/>
             </a>
             <a href="https://codepen.io/Mariam91">
